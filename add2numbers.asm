@@ -12,8 +12,8 @@ mvi d, 05    ; Put 5 in register d
 mvi e, 05    ; Put 5 in register e
 add d;
 add e;
-sta 0022; store contents of accum in memory
-
+;sta 0022; store contents of accum in memory   (decimal memory location)
+sta 0022h ; h denotes hexidecimal memory location
 
 
 hlt
